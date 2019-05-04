@@ -3,11 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Database;
+package utils;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
 
 /**
  *
@@ -15,6 +14,7 @@ import java.sql.SQLException;
  */
 public class ConnectionUtil {
     Connection conn = null;
+    PreparedStatement pata = null;
     public static Connection conDB()
     {
         String dbName="traffic";
@@ -26,8 +26,31 @@ public class ConnectionUtil {
             return con;
         } catch (ClassNotFoundException | SQLException ex) {
             System.err.println("ConnectionUtil : "+ex.getMessage());
-            return null;
+           return null;
         }
     }
     //make sure you add the lib
+    /*public ArrayList<info> userinfo(String id){
+        ArrayList<info> usinfo=new ArrayList<>();
+        Connection conn = conDB();
+        String sorgu="select * from userlogin where user_name=?";
+        try {
+            pata = conn.prepareStatement(sorgu);
+            pata.setString(1,id);
+            ResultSet rs=pata.executeQuery();
+            info in;
+            while(rs.next()){
+                in=new info(rs.getInt("id"),
+                        rs.getString("user_name"),
+                        rs.getString("user_surname"),
+                        rs.getString("username"),
+                        rs.getString("user_password"));
+                usinfo.add(in);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+         return usinfo;
+
+    }*/
 }
