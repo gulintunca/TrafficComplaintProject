@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="683.0" prefWidth="1011.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="232.0" layoutY="189.0" prefHeight="31.0" prefWidth="209.0" />
+      <TextField layoutX="228.0" layoutY="318.0" />
+      <TextField layoutX="228.0" layoutY="398.0" />
+      <Button layoutX="519.0" layoutY="596.0" mnemonicParsing="false" text="OKAY" />
+      <Button layoutX="513.0" layoutY="535.0" mnemonicParsing="false" text="Çıkış" />
+      <ChoiceBox layoutX="229.0" layoutY="130.0" prefHeight="31.0" prefWidth="215.0" />
+      <CheckBox layoutX="232.0" layoutY="249.0" mnemonicParsing="false" text="Taxi" />
+      <CheckBox layoutX="322.0" layoutY="249.0" mnemonicParsing="false" text="Motocycle" />
+      <CheckBox layoutX="453.0" layoutY="249.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="66.0" text="Bus" />
+      <CheckBox layoutX="529.0" layoutY="249.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="66.0" text="Car" />
+      <Label layoutX="79.0" layoutY="135.0" text="city" />
+      <Label layoutX="78.0" layoutY="194.0" text="district" />
+      <Label layoutX="79.0" layoutY="249.0" text="Vehicle Type" />
+      <Label layoutX="75.0" layoutY="323.0" text="Plate" />
+      <Label layoutX="75.0" layoutY="403.0" text="Date" />
+      <Label layoutX="62.0" layoutY="481.0" prefHeight="21.0" prefWidth="84.0" text="Complaint" />
+      <TextArea layoutX="222.0" layoutY="443.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

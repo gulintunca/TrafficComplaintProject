@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="1236.0" xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="controller.AdminHomePageController" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="293.0" layoutY="95.0" mnemonicParsing="false" text="search" />
+      <TextField layoutX="46.0" layoutY="95.0" />
+      <TableView layoutX="69.0" layoutY="163.0" prefHeight="512.0" prefWidth="1039.0">
+        <columns>
+            <TableColumn prefWidth="75.0" text="ID" />
+          <TableColumn prefWidth="120.0" text="Name" />
+          <TableColumn prefWidth="120.0" text="Surname" />
+            <TableColumn prefWidth="120.0" text="City" />
+            <TableColumn prefWidth="120.0" text="District" />
+            <TableColumn prefWidth="120.0" text="Vehicle Type" />
+            <TableColumn prefWidth="120.0" text="L. Plate" />
+            <TableColumn prefWidth="120.0" text="Date" />
+            <TableColumn prefWidth="120.0" text="Complaint" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

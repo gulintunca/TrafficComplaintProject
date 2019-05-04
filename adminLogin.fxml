@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="608.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminLoginController">
+   <children>
+      <Button fx:id="btnSignin" layoutX="284.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="37.0" prefWidth="118.0" text="Login" textFill="#6971b7" AnchorPane.leftAnchor="284.0" AnchorPane.topAnchor="276.0" />
+      <TextField fx:id="tfUsername" layoutX="223.0" layoutY="130.0" prefHeight="38.0" prefWidth="240.0" promptText="username" AnchorPane.leftAnchor="223.0" AnchorPane.topAnchor="130.0" />
+      <TextField fx:id="tfPassword" layoutX="223.0" layoutY="195.0" prefHeight="38.0" prefWidth="240.0" promptText="password" AnchorPane.leftAnchor="223.0" AnchorPane.topAnchor="195.0" />
+      <Text fill="#d5d5d5" layoutX="284.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN IN" wrappingWidth="118.39999999999998" AnchorPane.leftAnchor="284.0" AnchorPane.topAnchor="77.1015625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="63.0" fitWidth="84.0" layoutX="527.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="527.0" AnchorPane.topAnchor="352.0">
+         <image>
+            <Image url="@../ImageandIcons/ekranalintisi.PNG" />
+         </image>
+      </ImageView>
+
+      <ImageView fitHeight="415.0" fitWidth="608.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ImageandIcons/trafficggg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="402.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="308.0" layoutY="247.0" />
+      <Label fx:id="lblErrors" layoutX="326.0" layoutY="247.0" />
+   </children>
+</AnchorPane>
